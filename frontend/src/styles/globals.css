@@ -1,0 +1,70 @@
+.app_page {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #303958;
+}
+
+.custom_nav {
+  background-color: #303958;
+}
+
+.custom_nav a {
+  color: #b9b9d8 !important;
+}
+
+.navbar_button {
+  background-color: #8c5ca4 !important;
+  color: #cfcfdd !important;
+  font-weight: 500 !important;
+}
+
+.custom_button {
+  background-color: #8c5ca4 !important;
+  color: #cfcfdd !important;
+}
+
+.h100 {
+  height: 100vh;
+}
+
+.custom_card {
+  background-color: #3f4e85;
+  color: #b9b9d8 !important;
+  border: 1px solid #8c5ca4;
+}
+
+.card_header_text {
+  font-size: calc(0.8rem + 0.3vw);
+}
+
+.card_heading {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.custom_hamburger{
+    color: #8c5ca4;
+    font-size: calc(1.6rem + .6vw);
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  border-radius: 0px !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.login_again{
+    color: #8c5ca4;
+    text-decoration: none;
+}
+.login_again:hover{
+    transition: all .3s ease-in-out;
+    color: #b9b9d8;
+}
+
+.card_footer_h2{
+    font-size: calc(.9rem + .1vw);
+}
