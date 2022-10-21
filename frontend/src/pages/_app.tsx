@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     import("bootstrap");
   }, []);
   return (
-    <div className="app_page">
+    <div className="app_page px-2">
       <Navbar />
       <Component {...pageProps} />
     </div>
