@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useAppContext } from "../../context/context";
 
 const Navbar = () => {
+  //connect wallet
+  const { connectWallet, address } = useAppContext();
+
   return (
     <>
       <nav className="navbar navbar-expand-lg custom_nav">
@@ -39,9 +43,15 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="d-flex">
-              <button className="btn navbar_button rounded-1" type="submit">
-                Connect Wallet
-              </button>
+              {address ? (
+                <button className="btn navbar_button rounded-1" type="submit">
+                  {address}
+                </button>
+              ) : (
+                <button onClick={connectWallet} className="btn navbar_button rounded-1" type="submit">
+                  Connect Wallet
+                </button>
+              )}
             </div>
           </div>
         </div>
